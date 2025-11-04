@@ -1,6 +1,6 @@
 # ChatGPT4Arch
 
-A lightweight Electron wrapper that gives ChatGPT a native-feeling desktop client on Arch-based Linux distributions. The app embeds `https://chatgpt.com`, keeps you signed in between launches, and respects the system appearance so it blends in with Sway, Garuda Dragonized, and other Arch environments.
+A lightweight Electron wrapper that gives ChatGPT a native-feeling desktop client on Arch Linux while staying friendly to other distributions. The app embeds `https://chatgpt.com`, keeps you signed in between launches, and respects the system appearance so it fits in on your desktop.
 
 ## Features
 
@@ -57,7 +57,7 @@ The roadmap tracks the planned improvements for the MVP and beyond:
 1. **Window polish**: persist size/position, add tray integration where supported, expose a reload shortcut.
 2. **Visual updates**: optional frameless layout, custom title bar, refined styling.
 3. **Settings & integrations**: preferences screen, theme toggle, always-on-top mode.
-4. **Packaging**: produce `.AppImage`/`.deb` builds and verify on Garuda Sway + Dragonized.
+4. **Packaging**: produce `.AppImage`/`.deb` builds and verify on Arch and other major Linux desktops.
 
 Progress is tracked locally in `Progress.md` (ignored in Git so personal notes stay private).
 
