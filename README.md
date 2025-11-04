@@ -37,7 +37,7 @@ Launch the development build:
 npm start
 ```
 
-Electron will open a window and load `chatgpt.com`. If the network is unavailable, you'll see a friendly offline fallback page with a reload button. If you prefer SSH remotes, swap the clone command for `git@github.com:chicheese/ChatGPT4Arch.git`.
+Electron will open a window and load `chatgpt.com`. If the network is unavailable, you'll see a friendly offline fallback page with a reload button.
 
 ## Project Structure
 
