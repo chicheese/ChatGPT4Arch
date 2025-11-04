@@ -59,8 +59,6 @@ The roadmap tracks the planned improvements for the MVP and beyond:
 3. **Settings & integrations**: preferences screen, theme toggle, always-on-top mode.
 4. **Packaging**: produce `.AppImage`/`.deb` builds and verify on Arch and other major Linux desktops.
 
-Progress is tracked locally in `Progress.md` (ignored in Git so personal notes stay private).
-
 ## Development Notes
 
 - The app uses Electron's default session to store cookies; no extra code needed for persistence yet.
