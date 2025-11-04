@@ -26,7 +26,7 @@ nvm use --lts
 Clone the repository and install dependencies:
 
 ```bash
-git clone git@github.com:chicheese/ChatGPT4Arch.git
+git clone https://github.com/chicheese/ChatGPT4Arch.git
 cd ChatGPT4Arch
 npm install
 ```
@@ -37,7 +37,7 @@ Launch the development build:
 npm start
 ```
 
-Electron will open a window and load `chatgpt.com`. If the network is unavailable, you'll see a friendly offline fallback page with a reload button.
+Electron will open a window and load `chatgpt.com`. If the network is unavailable, you'll see a friendly offline fallback page with a reload button. If you prefer SSH remotes, swap the clone command for `git@github.com:chicheese/ChatGPT4Arch.git`.
 
 ## Project Structure
 
