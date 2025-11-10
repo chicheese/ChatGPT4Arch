@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT — Liquid Glass Shell</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell" data-drag-region>
+      <header class="toolbar">
+        <div class="window-controls" role="group" aria-label="Window controls">
+          <button
+            class="traffic traffic-close"
+            type="button"
+            data-action="close"
+            aria-label="Close window"
+            data-no-drag
+          ></button>
+          <button
+            class="traffic traffic-minimize"
+            type="button"
+            data-action="minimize"
+            aria-label="Minimize window"
+            data-no-drag
+          ></button>
+          <button
+            class="traffic traffic-maximize"
+            type="button"
+            data-action="maximize"
+            aria-label="Maximize window"
+            data-no-drag
+          ></button>
+        </div>
+        <div class="title" aria-hidden="true">ChatGPT</div>
+        <div class="toolbar-actions" role="group" aria-label="Window actions">
+          <button
+            class="tool-button"
+            id="reload-chat"
+            type="button"
+            title="Reload ChatGPT"
+            data-no-drag
+          >
+            ⟳
+          </button>
+        </div>
+      </header>
+
+      <main class="workspace" data-no-drag>
+        <div class="glass-surface">
+          <div class="glass-layer"></div>
+          <div class="glass-highlight"></div>
+        </div>
+
+        <section class="content">
+          <webview
+            id="chatgpt-view"
+            src="https://chatgpt.com"
+            partition="persist:chatgpt-session"
+            allowpopups
+          ></webview>
+
+          <div class="status-overlay" id="status-overlay" hidden>
+            <div class="status-card">
+              <h1>Can’t Reach ChatGPT</h1>
+              <p>
+                The connection to <span class="status-url">chatgpt.com</span> failed. Check your network and try
+                again.
+              </p>
+              <footer>
+                <button type="button" class="primary" id="retry-load">Retry</button>
+                <button type="button" id="open-status-page">Status Page</button>
+              </footer>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="renderer.js"></script>
+  </body>
+</html>
